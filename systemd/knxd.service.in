@@ -1,18 +1,16 @@
 [Unit]
 Description=KNX Daemon
-After=network.target knxd.socket
-Requires=knxd.socket
+After=network.target
 
 [Service]
 EnvironmentFile=@sysconfdir@/knxd.conf
 ExecStart=@exec_prefix@/bin/knxd $KNXD_OPTS
 User=knxd
 Group=knxd
-Type=notify
+Type=simple
 
 Restart=on-failure
 RestartSec=10
 
 [Install]
 WantedBy=multi-user.target network-online.target
-Also=knxd.socket

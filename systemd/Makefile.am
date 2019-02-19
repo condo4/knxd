@@ -1,6 +1,6 @@
 if HAVE_SYSTEMD
-systemdsystemunit_DATA=knxd.service knxd.socket
-sysconf_DATA=knxd.conf
+systemdsystemunit_DATA=knxd.service
+sysconf_DATA=knxd.conf knxd.ini
 systemdsysusers_DATA=sysusers.d/knxd.conf
 endif
 
