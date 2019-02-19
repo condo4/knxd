@@ -4,5 +4,5 @@ sysconf_DATA=knxd.conf knxd.ini
 systemdsysusers_DATA=sysusers.d/knxd.conf
 endif
 
-EXTRA_DIST=knxd.conf sysusers.d/knxd.conf
+EXTRA_DIST=knxd.conf sysusers.d/knxd.conf knxd.ini
 

@@ -1,2 +1,3 @@
 etc/knxd.conf
+etc/knxd.ini
 usr/lib/sysusers.d
